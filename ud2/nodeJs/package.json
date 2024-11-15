@@ -1,0 +1,20 @@
+{
+  "name": "ud2",
+  "version": "1.0.0",
+  "description": "ud2 desarrollo web entorno cliente",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kevin Romero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "ud2": "file:"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}

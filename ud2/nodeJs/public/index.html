@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Pizzería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzería Italiana - Menú de Pizzas</h1>
+    </header>
+    <div class="container">
+        <div class="menu">
+            <h2>Nuestras Pizzas</h2>
+            <!-- Pizzas -->
+            <div class="pizza" data-name="Pizza Margarita" data-price="8.99">
+                <h3>Pizza Margarita</h3>
+                <p>Tomate, queso, albahaca</p>
+                <p class="price">Precio: 8.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Pepperoni" data-price="10.99">
+                <h3>Pizza Pepperoni</h3>
+                <p>Tomate, queso, pepperoni</p>
+                <p class="price">Precio: 10.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza 4 Quesos" data-price="12.99">
+                <h3>Pizza 4 Quesos</h3>
+                <p>Queso mozzarella, cheddar, azul, parmesano</p>
+                <p class="price">Precio: 12.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Hawaiana" data-price="11.99">
+                <h3>Pizza Hawaiana</h3>
+                <p>Tomate, queso, jamón, piña</p>
+                <p class="price">Precio: 11.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Vegetariana" data-price="9.99">
+                <h3>Pizza Vegetariana</h3>
+                <p>Pimientos, champiñones, cebolla, aceitunas</p>
+                <p class="price">Precio: 9.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza BBQ" data-price="13.99">
+                <h3>Pizza BBQ</h3>
+                <p>Pollo, cebolla, salsa barbacoa</p>
+                <p class="price">Precio: 13.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Caliente" data-price="12.49">
+                <h3>Pizza Caliente</h3>
+                <p>Jalapeños, chorizo picante, tomate</p>
+                <p class="price">Precio: 12.49€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Mariscos" data-price="14.99">
+                <h3>Pizza Mariscos</h3>
+                <p>Mariscos, tomate, queso</p>
+                <p class="price">Precio: 14.99€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Toscana" data-price="11.49">
+                <h3>Pizza Toscana</h3>
+                <p>Tomate, salchicha, champiñones</p>
+                <p class="price">Precio: 11.49€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+            <div class="pizza" data-name="Pizza Deluxe" data-price="15.49">
+                <h3>Pizza Deluxe</h3>
+                <p>Carne, bacon, cebolla, queso</p>
+                <p class="price">Precio: 15.49€</p>
+                <button class="add-to-order">Añadir al pedido</button>
+            </div>
+        </div>
+        
+        <aside class="order-list">
+            <h2>Tu Pedido</h2>
+            <ul id="order-items"></ul>
+            <button id="finish-order" disabled>Finalizar Pedido</button>
+            <div id="order-summary" class="order-summary" style="display:none;">
+                <p><strong>Total:</strong> <span id="total-price">0</span> €</p>
+                <p><strong>Fecha del Pedido:</strong> <span id="order-date"></span></p>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Pizzería Italiana</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
